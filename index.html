@@ -6,9 +6,21 @@
     <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
-    <button type="button" onclick="funny_button()">123</button>
+    <h1>Math Formulas</h1>
 
-    <p style="font-weight: bold;">123123</p>
+    <form>
+      <h2>Quadratic Formula</h2>
+      
+      <label>a =</label>
+      <input type="number" value="1" id="quad_a"><br>
+      <label>b =</label>
+      <input type="number" value="-3" id="quad_b"><br>
+      <label>c =</label>
+      <input type="number" value="2" id="quad_c"><br>
+
+      <button type="button" onclick="call_quad_formula()">Calculate</button>
+      <p id="quadratic_total">x = <span id="quadratic_total_result1">0.0</span> and <span id="quadratic_total_result2">0.0</span></p>
+    </form>
 
     <script type="module" src="./src/index.js"></script>
   </body>
